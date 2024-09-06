@@ -49,6 +49,7 @@ export const App = () => {
   return (
     <>
       <div>
+        <h3>Chroma interpolated colors:</h3>
         {geojson.features.map((feature, index) => (
           <div
             key={index}
@@ -65,6 +66,7 @@ export const App = () => {
         ))}
       </div>
 
+      <h3>MapLibre interpolated colors:</h3>
       <ReactMap
         initialViewState={{
           longitude: 0.03,
